@@ -9,7 +9,7 @@ const main = async (prisma: Prisma) => {
         username: 'admin',
         email: 'admin@admin.com',
         password: await hashText('admin'),
-        role: USER_ROLE.ADMIN,
+        role: USER_ROLE.USER,
       },
     ],
     skipDuplicates: true,
